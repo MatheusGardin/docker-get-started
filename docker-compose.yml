@@ -3,8 +3,8 @@ version: '2'
 services:
   app:
     build: .
-    working_dir: /usr/app
+    working_dir: /usr/app/src
     volumes:
-      - .:/./src
+      - .:/usr/app/src
     ports:
       - 3000:3000
